@@ -16,6 +16,9 @@
 
         $main-font: 'Anton', sans-serif;
         $second-font: 'Comfortaa', cursive;
+
+        
+
         *,
         *::before,
         *::after {
@@ -48,6 +51,8 @@
         }
         body {
             font-family: $main-font;
+            background: url("../../assets/images/background-image.jpg");
+            background-size: cover;
             font-size: 0.875rem;
             counter-reset: tab;
         }
