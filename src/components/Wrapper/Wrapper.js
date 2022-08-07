@@ -1,10 +1,7 @@
-import React from 'react'
+import { WrapperContainer } from "./WrapperStyles";
 
-function Wrapper(children) {
-  return (
-    <section className='wrapper'>{children}</section>
-  )
-}
+const Wrapper = ({ children }) => {
+  return <WrapperContainer>{children}</WrapperContainer>
+};
 
-
-export default Wrapper
+export default Wrapper;
