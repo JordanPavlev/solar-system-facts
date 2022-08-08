@@ -1,6 +1,8 @@
-import mercuryImage from '../../assets/images/planet-mercury.svg';
-import mercuryInternalImage from '../../assets/images/planet-mercury-internal.svg';
-import mercuryGeoImage from '../../assets/images/planet-mercury-geology.png';
+import mercuryImage from '../assets/images/planet-mercury.svg';
+import mercuryInternalImage from '../assets/images/planet-mercury-internal.svg';
+import mercuryGeoImage from '../assets/images/planet-mercury-geology.png';
+
+import PlanetSection from '../components/PlanetSection/PlanetSection';
 
 const data = {
     name: 'Mercury',
@@ -34,5 +36,7 @@ const data = {
 }
 
 const Mercury = () => {
-    return data;
+    return <PlanetSection planetData={data} />
 }
+
+export default Mercury;

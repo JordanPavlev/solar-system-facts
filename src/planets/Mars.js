@@ -1,6 +1,8 @@
-import marsImage from '../../assets/images/planet-mars.svg';
-import marsInternalImage from '../../assets/images/planet-mars-internal.svg';
-import marsGeoImage from '../../assets/images/planet-mars-geology.png';
+import marsImage from '../assets/images/planet-mars.svg';
+import marsInternalImage from '../assets/images/planet-mars-internal.svg';
+import marsGeoImage from '../assets/images/planet-mars-geology.png';
+
+import PlanetSection from '../components/PlanetSection/PlanetSection';
 
 const data = {
 
@@ -35,7 +37,7 @@ const data = {
 }
 
 const Mars = () => {
-    return data
+    return <PlanetSection planetData={data} />
 }
 
 export default Mars;

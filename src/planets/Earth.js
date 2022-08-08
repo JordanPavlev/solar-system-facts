@@ -1,7 +1,8 @@
-import earthImage from '../../assets/images/planet-earth.svg';
-import earthInternalImage from '../../assets/images/planet-earth-internal.svg';
-import earthGeoImage from '../../assets/images/planet-earth-geology.png';
+import earthImage from '../assets/images/planet-earth.svg';
+import earthInternalImage from '../assets/images/planet-earth-internal.svg';
+import earthGeoImage from '../assets/images/planet-earth-geology.png';
 
+import PlanetSection from "../components/PlanetSection/PlanetSection"
 
 const data = {
     name: 'Earth',
@@ -35,7 +36,7 @@ const data = {
 }
 
 const Earth = () => {
-    return data
+    return <PlanetSection planetData={data} />
     
 }
 

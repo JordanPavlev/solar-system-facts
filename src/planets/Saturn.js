@@ -1,6 +1,8 @@
-import saturnImage from '../../assets/images/planet-saturn.svg';
-import saturnInternalImage from '../../assets/images/planet-saturn-internal.svg';
-import saturnGeoImage from '../../assets/images/planet-saturn-geology.png';
+import saturnImage from '../assets/images/planet-saturn.svg';
+import saturnInternalImage from '../assets/images/planet-saturn-internal.svg';
+import saturnGeoImage from '../assets/images/planet-saturn-geology.png';
+
+import PlanetSection from '../components/PlanetSection/PlanetSection';
 
 const data = {
     name: 'Saturn',
@@ -34,6 +36,8 @@ const data = {
 }
 
  const Saturn = () => {
-    return data;
+    return <PlanetSection planetData={data} />
     
  }
+
+ export default Saturn;

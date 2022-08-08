@@ -1,6 +1,8 @@
-import venusImage from '../../assets/images/planet-venus.svg';
-import venusInternalImage from '../../assets/images/planet-venus-internal.svg';
-import venusGeoImage from '../../assets/images/planet-venus-geology.png';
+import venusImage from '../assets/images/planet-venus.svg';
+import venusInternalImage from '../assets/images/planet-venus-internal.svg';
+import venusGeoImage from '../assets/images/planet-venus-geology.png';
+
+import PlanetSection from '../components/PlanetSection/PlanetSection';
 
 const data = {
     name: 'Venus',
@@ -34,5 +36,7 @@ const data = {
 }
 
 const Venus = () => {
-    return data;
+    return <PlanetSection planetData={data} />
 }
+
+export default Venus;

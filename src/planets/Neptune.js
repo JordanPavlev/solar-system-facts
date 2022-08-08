@@ -1,6 +1,8 @@
-import neptuneImage from '../../assets/images/planet-neptune.svg';
-import neptuneInternalImage from '../../assets/images/planet-neptune-internal.svg';
-import neptuneGeoImage from '../../assets/images/planet-neptune-geology.png';
+import neptuneImage from '../assets/images/planet-neptune.svg';
+import neptuneInternalImage from '../assets/images/planet-neptune-internal.svg';
+import neptuneGeoImage from '../assets/images/planet-neptune-geology.png';
+
+import PlanetSection from '../components/PlanetSection/PlanetSection';
 
 const data = {
     name: 'Neptune',
@@ -34,5 +36,7 @@ const data = {
 }
 
 const Neptune = () => {
-    return data;
+    return <PlanetSection planetData={data} />
 }
+
+export default Neptune;

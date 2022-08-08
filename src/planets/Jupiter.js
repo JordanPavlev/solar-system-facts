@@ -1,6 +1,8 @@
-import jupiterImage from '../../assets/images/planet-jupiter.svg';
-import jupiterInternalImage from '../../assets/images/planet-jupiter-internal.svg';
-import jupiterGeoImage from '../../assets/images/planet-jupiter-geology.png';
+import jupiterImage from '../assets/images/planet-jupiter.svg';
+import jupiterInternalImage from '../assets/images/planet-jupiter-internal.svg';
+import jupiterGeoImage from '../assets/images/planet-jupiter-geology.png';
+
+import PlanetSection from '../components/PlanetSection/PlanetSection';
 
 const data = {
         name: 'Jupiter',
@@ -34,7 +36,7 @@ const data = {
 }
 
 const Jupiter = () => {
-    return data
+    return <PlanetSection planetData={data} />
 }
 
 export default Jupiter; 
