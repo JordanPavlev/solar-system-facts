@@ -6,10 +6,10 @@ import PlanetSection from '../components/PlanetSection/PlanetSection';
 
 const data = {
 
-    name: 'Mars',
+    name: 'Mars♂',
     overview: {
         content:
-            'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".',
+            'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".Mars is a terrestrial planet with a thin atmosphere, and has a crust primarily composed of elements similar to Earths crust, as well as a core made of iron and nickel.',
         source: 'https://en.wikipedia.org/wiki/Mars',
         image: marsImage,
     },

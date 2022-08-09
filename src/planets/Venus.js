@@ -5,16 +5,16 @@ import venusGeoImage from '../assets/images/planet-venus-geology.png';
 import PlanetSection from '../components/PlanetSection/PlanetSection';
 
 const data = {
-    name: 'Venus',
+    name: 'Venus♀',
     overview: {
         content:
-            "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
+            "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.At times, it has been seen in a completely dark sky. Venus orbits the Sun every 224.7 Earth days.",
         source: 'https://en.wikipedia.org/wiki/Venus',
         image: venusImage,
     },
     structure: {
         content:
-            'The similarity in size and density between Venus and Earth suggests they share a similar internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.',
+            'At times, it has been seen in a completely dark sky. Venus orbits the Sun every 224.7 Earth days.The similarity in size and density between Venus and Earth suggests they share a similar internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.',
         source: 'https://en.wikipedia.org/wiki/Venus#Internal_structure',
         image: venusInternalImage,
     },

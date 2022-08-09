@@ -5,7 +5,7 @@ import saturnGeoImage from '../assets/images/planet-saturn-geology.png';
 import PlanetSection from '../components/PlanetSection/PlanetSection';
 
 const data = {
-    name: 'Saturn',
+    name: 'Saturn♄',
     overview: {
         content:
             'Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.',
@@ -29,8 +29,8 @@ const data = {
     desktopImgWidth: '666px',
     tabletImgWidth: '422px',
     mobileImgWidth: '256px',
-    rotation: '10.8 Hours',
-    revolution: '29.46 Years',
+    rotation: '11 Hours',
+    revolution: '29.5 Years',
     radius: '58,232 KM',
     temperature: '-138°c',
 }

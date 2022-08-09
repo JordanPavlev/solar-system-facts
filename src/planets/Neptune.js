@@ -5,10 +5,10 @@ import neptuneGeoImage from '../assets/images/planet-neptune-geology.png';
 import PlanetSection from '../components/PlanetSection/PlanetSection';
 
 const data = {
-    name: 'Neptune',
+    name: 'Neptune♆',
     overview: {
         content:
-            'Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.',
+            'Neptune 🔱 is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.',
         source: 'https://en.wikipedia.org/wiki/Neptune',
         image: neptuneImage,
     },
@@ -29,8 +29,8 @@ const data = {
     desktopImgWidth: '450px',
     tabletImgWidth: '285px',
     mobileImgWidth: '173px',
-    rotation: '16.08 Hours',
-    revolution: '164.79 Years',
+    rotation: '16 Hours',
+    revolution: '164 Years',
     radius: '24,622 KM',
     temperature: '-201°c',
 }
