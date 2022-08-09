@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Switch, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 
 import  Provider  from "../Provider/Provider";
@@ -26,6 +27,7 @@ const App = () => {
   const [activePlanet, setActivePlanet] = useState('/');
 
     return (
+       
       <Provider>
         <Wrapper>
           <Navbar
@@ -34,38 +36,33 @@ const App = () => {
             activePlanet={activePlanet}
           />
             <AnimatePresence>
-            <Switch location={location} key={location.key}>
-                        <Route exact path="/mercury">
-                            <Mercury />
-                        </Route>
-                        <Route exact path="/venus">
-                            <Venus />
-                        </Route>
-                        <Route exact path="/earth">
-                            <Earth />
-                        </Route>
-                        <Route exact path="/mars">
-                            <Mars />
-                        </Route>
-                        <Route exact path="/jupiter">
-                            <Jupiter />
-                        </Route>
-                        <Route exact path="/saturn">
-                            <Saturn />
-                        </Route>
-                        <Route exact path="/uranus">
-                            <Uranus />
-                        </Route>
-                        <Route exact path="/neptune">
-                            <Neptune />
-                        </Route>
-                        <Route exact path="/">
-                            <Animation activePlanet={activePlanet} />
-                        </Route>
-                    </Switch>
+            
+                    <Routes>
+                        <Route  path="/mercury" element={<Mercury />} />
+                            
+                        
+                        <Route  path="/venus" element={<Venus />} />
+                            
+                        <Route  path="/earth" element={<Earth />} />
+                            
+                        <Route  path="/mars" element={<Mars />} />
+                            
+                        <Route  path="/jupiter" element={<Jupiter />} />
+                           
+                        <Route  path="/saturn" element={<Saturn />} />
+                            
+                        <Route  path="/uranus" element={<Uranus />} />
+                            
+                        <Route  path="/neptune" element={<Neptune />} />
+                            
+                        <Route  path="/" element={<Animation activePlanet={activePlanet} />} />
+                            
+                    </Routes>
+                   
             </AnimatePresence>
         </Wrapper>
       </Provider>
+      
     )
 }
 
