@@ -1,21 +1,21 @@
 import { useState } from "react";
 
 const useToggleMenu = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isActive, setIsActive] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);
     const [isTransitionend, setIsTransitionend] = useState(true);
     let tabletBreakpoint = 768;
 
 
 
-    //showMenu or closeMenu depending on isOpen state
+    //showMenu or closeMenu depending on isActive state
     const handleToggle = () => {
         if (!isTransitionend) return false;
-        !isOpen ? showMenu() : closeMenu();
+        !isActive ? showMenu() : closeMenu();
     }
 
     const showMenu = () => {
-        setIsOpen(true);
+        setIsActive(true);
         setIsTransitionend(false);
         setIsExpanded(true);
 
@@ -26,7 +26,7 @@ const useToggleMenu = () => {
 
     const closeMenu = () => {
         setIsTransitionend(false);
-        setIsOpen(false);
+        setIsActive(false);
         setIsExpanded(false);
 
         setTimeout(() => {
@@ -34,16 +34,16 @@ const useToggleMenu = () => {
         }, 1000);
     }
 
-    const restoreToDefault = () => {
-        setIsOpen(false);
+    const runDefault = () => {
+        setIsActive(false);
         setIsExpanded(false);
         setIsTransitionend(true);
     }
 
     return [
         handleToggle,
-        restoreToDefault,
-        isOpen,
+        runDefault,
+        isActive,
         isExpanded,
         tabletBreakpoint,
     ]

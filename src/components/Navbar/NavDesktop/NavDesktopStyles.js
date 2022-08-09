@@ -25,7 +25,7 @@ export const Item = styled.li``
 export const Link = styled(NavLink)`
     display: flex;
     position: relative;
-    font-size: 0.6875rem;
+    font-size: 0.9875rem;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 25px;
@@ -35,7 +35,7 @@ export const Link = styled(NavLink)`
     transition: color 300ms ease;
     
     &:hover {
-        color: ${(props) => props.theme.colors.white};
+        color: ${(props) => props.$bgcolor};
     }
 
     @media (min-width: 768px) {
@@ -64,10 +64,11 @@ export const Link = styled(NavLink)`
         &::after {
             position: absolute;
             content: '';
-            top: -5px;
             left: 0;
+            bottom: 5px;
             width: 100%;
-            height: 4px;
+            border-radius: 10px;
+            height: 8px;
             background-color: ${(props) => props.$bgcolor};
             transform: scaleX(0);
             transition: transform 350ms ease;
@@ -75,12 +76,14 @@ export const Link = styled(NavLink)`
 
         &:hover {
             &::after {
-                transform: scaleX(1);
+                color: ${(props) => props.$bgcolor};
+                transform: scaleX(1.4);
             }
         }
 
         &:focus {
             outline: none;
+            color: ${(props) => props.$bgcolor};
         }
 
         &:focus-visible {
@@ -94,7 +97,7 @@ export const Link = styled(NavLink)`
             props.$isActive
                 ? css`
                     &::after {
-                        transform: scaleX(1);
+                        transform: scaleX(2.4);
                     }
                 `
                 : ''}

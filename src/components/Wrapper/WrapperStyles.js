@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const WrapperContainer = styled.div`
     position: relative;
     min-height: 100vh;
-    background-color: ${(props) => props.theme.colors.black};
     overflow: hidden;
+    
     
     &::after {
         content: '';

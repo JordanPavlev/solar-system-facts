@@ -3,11 +3,13 @@ import { css } from "styled-components";
 import { motion } from 'framer-motion';
 
 export const Tabs = styled(motion.div)`
-
-    display: flex;
     border-bottom: 1px solid ${(props) => props.theme.colors.grayDark};
-    justify-content: space-between;
-    padding: 0 24px;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 42px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
 
     @media (min-width: 480px) {
         justify-content: space-evenly;
@@ -32,16 +34,15 @@ export const Tabs = styled(motion.div)`
 `
 
 export const Tab = styled.button`
-
     position: relative;
-    display: flex;
+    display: block;
     font-family: ${(props) => props.theme.fonts.primary};
-    font-size: 0.5625rem;
-    font-weight: 600;
+    font-size: 0.7625rem;
     letter-spacing: 0.12rem;
     text-transform: uppercase;
-    background: transparent;
-    border: none;
+    border: 4px inset ${(props) => props.theme.colors.grayDark};
+    background-color: rgb(247, 252, 250, .1);   
+    
     padding: 20px 5px;
     color: ${(props) => props.theme.colors.grayLight};
     transition: color 350ms ease;
@@ -52,7 +53,7 @@ export const Tab = styled.button`
         bottom: -1px;
         left: 0;
         width: 100%;
-        height: 4px;
+        height: 6px;
         background-color: ${(props) => props.planetData.sectionColor};
         transform-origin: center;
         transform: scaleX(0);
@@ -71,7 +72,8 @@ export const Tab = styled.button`
 
     @media (min-width: 768px) {
         padding: 15px 5px 15px 50px;
-        border: 1px solid ${(props) => props.theme.colors.grayDark};
+        border: 4px inset ${(props) => props.theme.colors.grayDark};
+        border-radius: 15px;
         transition: background-color 300ms ease;
         cursor: pointer;
         color: ${(props) => props.theme.colors.white};
@@ -118,12 +120,12 @@ export const Tab = styled.button`
     }
 
     @media (min-width: 1025px) {
-        font-size: 0.75rem;
+        font-size: 1rem;
         letter-spacing: 0.16rem;
         line-height: 25px;
-        padding: 11px 5px 10px 74px;
+        padding: 11px 5px 10px 24px;
         &::after {
-            left: 28px;
+            left: 18px;
             transform: translateY(-120%);
             font-size: 0.75rem;
             letter-spacing: 0.16rem;

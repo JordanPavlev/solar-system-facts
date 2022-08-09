@@ -3,12 +3,12 @@ import { css } from "styled-components";
 import { motion } from "framer-motion";
 
 export const Intro = styled(motion.div)`
-
     display: flex;
     flex-flow: column;
     align-items: center;
+    height: 70%;
     padding: 0 24px;
-    margin-bottom: 28px;
+    margin-bottom: 2px;
 
     @media (min-width: 768px) {
         grid-area: intro;
@@ -18,14 +18,14 @@ export const Intro = styled(motion.div)`
 
     @media (min-width: 1025px) {
         align-self: end;
-        margin: 60px 0 39px 0;
+        margin: 60px 0px -18px 0;
     }
 `;
 
 export const Title = styled.h1`
 
     color: ${(props) => props.theme.colors.white};
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-family: ${(props) => props.theme.fonts.secondary};
     font-weight: 500;
     line-height: 100%;
@@ -44,8 +44,7 @@ export const Title = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-
-    font-size: 0.6875rem;
+    font-size: 0.9875rem;
     line-height: 22px;
     color: ${(props) => props.theme.colors.whiteAlpha75};
     text-align: center;
@@ -66,9 +65,9 @@ ${(props) =>
     }
 
     @media (min-width: 1025px) {
-        font-size: 0.875rem;
+        font-size: 0.975rem;
         line-height: 25px;
-        margin-bottom: 24px;
+        margin-bottom: 4px;
     }
 
     @keyframes textSwap {
@@ -101,13 +100,13 @@ export const Span = styled.span`
     @media (min-width: 1025px) {
         font-size: 0.875rem;
     }
-`;
+`
 
 export const PlanetLink = styled.a`
 
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 20px;
     font-size: 0.75rem;
     font-weight: 600;
     line-height: 25px;

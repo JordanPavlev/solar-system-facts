@@ -1,6 +1,8 @@
 import { theme } from "./theme";
 import { ThemeProvider } from "styled-components";
 import { createGlobalStyle } from "styled-components";
+import bgimage from "../../assets/images/background-image.jpg"
+
 
 const GlobalStyle = createGlobalStyle`
     *,
@@ -35,19 +37,19 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         font-family: ${theme.fonts.primary};
-        font-size: 0.875rem;
         counter-reset: tab;
+        background-image: url(${bgimage});
+        background-size: cover;
     }
     a {
         text-decoration: none;
-        color: inherit;
     }
 `
 
 const Provider = ({ children }) => {
     return (
         <ThemeProvider theme={theme}>
-            <GlobalStyle/>
+            <GlobalStyle/>{}
             {children}
         </ThemeProvider>
     )
