@@ -5,12 +5,6 @@
  Builded with JavaScript - ReactJS and styled components.
 
 
-
-## Appendix
-
-Any additional information goes here
-
-
 ## Setup 
 # To run this project, clone it and install it locally using npm:
 
