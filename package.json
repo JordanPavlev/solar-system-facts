@@ -9,14 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.2.3",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
+    "@next/font": "13.4.3",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
+    "framer-motion": "^7.0.0",
     "next": "13.4.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "react-icomoon": "^2.5.4",
+    "sass": "^1.62.1",
+    "styled-components": "^5.3.10"
   }
 }
