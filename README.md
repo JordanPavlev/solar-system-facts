@@ -1,39 +1,34 @@
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Solar system facts 
+## Getting Started
 
- 8 pages with 3 parts of facts for every planet in our solar system and images for every part. Including one main animation on start.
- Builded with JavaScript - ReactJS and styled components.
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-## Setup 
-# To run this project, clone it and install it locally using npm:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-$ git clone https://github.com/JordanPavlev/solar-system-facts.git
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-$ cd planets-fact
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-$ npm install
+## Learn More
 
-# build on local environment:
+To learn more about Next.js, take a look at the following resources:
 
-$ npm run build
-## Demo
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-# https://jordanpavlev.github.io/solar-system-facts/
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+## Deploy on Vercel
 
-## Acknowledgements
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
- - [Original challenge](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f)
- - [Styled components](https://styled-components.com/)
- - [Framer Motion API](https://www.framer.com/motion/)
- - [Sample animation](https://codepen.io/kowlor/pen/ZYYQoy)
-## Badges
-
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/contains-tasty-spaghetti-code.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/ctrl-c-ctrl-v.svg)](https://forthebadge.com)
-## Lessons Learned
-
-Made some custom hooks for the toggle menu and changing planets. Used react-router v6 and this was my first projects using styled-components
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
