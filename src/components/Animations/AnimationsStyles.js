@@ -19,6 +19,7 @@ import { NavLink } from "react-router-dom";
 export const AnimationContainer = styled(motion.div)`
     position: relative;
     min-height: 105vh;
+    margin-top: 15px;
 `
 export const PlanetAnimation = styled(NavLink)`
 position: absolute;
