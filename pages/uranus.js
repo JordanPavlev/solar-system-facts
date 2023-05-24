@@ -1,6 +1,6 @@
-import uranusImage from '@public/planet-uranus.svg';
-import uranusInternalImage from '@public/planet-uranus-internal.svg';
-import uranusGeoImage from '@public/planet-uranus-geology.png';
+import uranusImage from '../public/planet-uranus.svg';
+import uranusInternalImage from '../public/planet-uranus-internal.svg';
+import uranusGeoImage from '../public/planet-uranus-geology.png';
 
 import PlanetSection from '../components/PlanetSection/PlanetSection';
 

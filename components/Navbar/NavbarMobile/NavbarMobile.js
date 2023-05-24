@@ -1,6 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import { useEffect } from 'react';
-import { Nav, Menu, Bars, List } from './NavMobileStyles';
+import { Nav, Menu, Bars, List } from './NavbarMobileStyles';
 import Items from './NavConfig';
 import useToggleMenu from '../../../useToggleMenu';
 

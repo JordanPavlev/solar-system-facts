@@ -1,68 +1,73 @@
 import { useState } from "react";
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { useRouter } from "next/router";
 import { AnimatePresence } from 'framer-motion'
-
-import  Provider  from "@components/Provider";
-
-import Wrapper from '@components/Wrapper'
-
-import Navbar from '@components/Navbar'
-
-import Animation from "@components/Animations"
-
-import Mercury from './Mercury'
-import Venus from "./Venus";
+import  Provider  from "../components/Provider/Provider";
+import Wrapper from '../components/Wrapper/Wrapper'
+import Navbar from '../components/Navbar/Navbar'
+import Animation from "../components/Animation/Animation"
+import Mercury from './mercury'
+import Venus from "./venus";
 import Earth from "./earth";
-import Neptune from "./Neptune";
-import Saturn from "./Saturn";
-import Mars from "./Mars";
-import Jupiter from "./Jupiter";
-import Uranus from "./Uranus"
+import Neptune from "./neptune";
+import Saturn from "./saturn";
+import Mars from "./mars";
+import Jupiter from "./jupiter";
+import Uranus from "./uranus"
+import Link from "next/link";
 
 
-const App = () => {
-  
-  const location = useLocation();
+export default function App () {
+
+  const location = useRouter();
   const [activePlanet, setActivePlanet] = useState('/');
-
-    return (
+  return (
+    <Provider>
+      <Wrapper>
+      <Navbar
+           pathName={location.pathname}
+           onHover={setActivePlanet}
+           activePlanet={activePlanet}
+         />
+      </Wrapper>
+    </Provider>
+  )
+  // const location = useRouter();
+  // const [activePlanet, setActivePlanet] = useState('/');
+  //   return (
        
-      <Provider>
-        <Wrapper>
-          <Navbar
-            pathName={location.pathname}
-            onHover={setActivePlanet}
-            activePlanet={activePlanet}
-          />
-            <AnimatePresence>
+  //     <Provider>
+  //       <Wrapper>
+  //         <Navbar
+  //           pathName={location.pathname}
+  //           onHover={setActivePlanet}
+  //           activePlanet={activePlanet}
+  //         />
+  //           <AnimatePresence>
             
-                    <Routes>
-                        <Route  path="/mercury" element={<Mercury />} />
+                   
+  //                       <Link  href="/earth" />
                             
                         
-                        <Route  path="/venus" element={<Venus />} />
+  //                       <Link   href="/earth"/>
                             
-                        <Route  path="/earth" element={<Earth />} />
+  //                       <Link   href="/earth" />
                             
-                        <Route  path="/mars" element={<Mars />} />
+  //                       <Link   href="/earth" />
                             
-                        <Route  path="/jupiter" element={<Jupiter />} />
+  //                       <Link href="/earth" />
                            
-                        <Route  path="/saturn" element={<Saturn />} />
+  //                       <Link  href="/earth"/>
                             
-                        <Route  path="/uranus" element={<Uranus />} />
+  //                       <Link href="/earth"/>
                             
-                        <Route  path="/neptune" element={<Neptune />} />
+  //                       <Link  href="/earth" />
                             
-                        <Route  path="/" element={<Animation activePlanet={activePlanet} />} />
-                            
-                    </Routes>
+  //                       <Link href="/earth" />
+   
                    
-            </AnimatePresence>
-        </Wrapper>
-      </Provider>
+  //           </AnimatePresence>
+  //       </Wrapper>
+  //     </Provider>
       
-    )
+  //   )
 }
-
-export default App;

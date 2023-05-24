@@ -1,5 +1,5 @@
-import { Link } from "./NavMobileStyles";
-import { Item } from "./NavMobileStyles";
+import { Links } from "./NavbarMobileStyles";
+import { Item } from "./NavbarMobileStyles";
 import Icon from "../../Icon/Icon";
 import {planets} from "../Planets"
 
@@ -14,7 +14,7 @@ const NavConfig = ({ runDefault }) => {
             duration: 0.7,
             delay: `${(planet.id * 5 + 0.5) / 100}`,}}
         >
-        <Link
+        <Links
             to={planet.path}
             color={planet.color}
             onClick={() => runDefault()}
@@ -26,7 +26,7 @@ const NavConfig = ({ runDefault }) => {
             color="hsl(240, 6%, 54%)"
             customStyle={{ marginTop: '5px' }}
         />
-            </Link>
+            </Links>
         </Item>
      ) )
 }

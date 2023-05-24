@@ -1,6 +1,6 @@
-import mercuryImage from '@public/planet-mercury.svg';
-import mercuryInternalImage from '@public/planet-mercury-internal.svg';
-import mercuryGeoImage from '@public/planet-mercury-geology.png';
+import mercuryImage from '../public/planet-mercury.svg';
+import mercuryInternalImage from '../public/planet-mercury-internal.svg';
+import mercuryGeoImage from '../public/planet-mercury-geology.png';
 
 import PlanetSection from '../components/PlanetSection/PlanetSection';
 

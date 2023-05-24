@@ -1,7 +1,7 @@
 import { theme } from "./theme";
 import { ThemeProvider } from "styled-components";
 import { createGlobalStyle } from "styled-components";
-import bgimage from "../../assets/images/background-image.jpg"
+import bgimage from "../../public/background-image.jpg"
 
 
 const GlobalStyle = createGlobalStyle`

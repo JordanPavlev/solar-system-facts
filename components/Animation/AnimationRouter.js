@@ -1,4 +1,4 @@
-import { Earth, Mercury, Venus, Neptune, Uranus, Mars, Jupiter, Saturn } from "./AnimationsStyles";
+import { Earth, Mercury, Venus, Neptune, Uranus, Mars, Jupiter, Saturn } from "./AnimationStyles";
 
 
 const AnimationsRouter = ({ data, activePlanet }) => {

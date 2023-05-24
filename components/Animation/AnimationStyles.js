@@ -13,14 +13,15 @@ import saturnImage from '@/public/planet-saturn.svg';
 import uranusImage from '@/public/planet-uranus.svg';
 import neptuneImage from '@/public/planet-neptune.svg';
 
-import { NavLink } from "react-router-dom";
+
+import Link from "next/link";
 
 
 export const AnimationContainer = styled(motion.div)`
     position: relative;
     min-height: 105vh;
 `
-export const PlanetAnimation = styled(NavLink)`
+export const PlanetAnimation = styled(Link)`
 position: absolute;
 top: 50%;
 left: 50%;

@@ -1,6 +1,6 @@
-import marsImage from '@public/planet-mars.svg';
-import marsInternalImage from '@public/planet-mars-internal.svg';
-import marsGeoImage from '@public/planet-mars-geology.png';
+import marsImage from '../public/planet-mars.svg';
+import marsInternalImage from '../public/planet-mars-internal.svg';
+import marsGeoImage from '../public/planet-mars-geology.png';
 
 import PlanetSection from '../components/PlanetSection/PlanetSection';
 

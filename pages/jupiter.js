@@ -1,6 +1,6 @@
-import jupiterImage from '@public/planet-jupiter.svg';
-import jupiterInternalImage from '@public/planet-jupiter-internal.svg';
-import jupiterGeoImage from '@public/planet-jupiter-geology.png';
+import jupiterImage from '../public/planet-jupiter.svg';
+import jupiterInternalImage from '../public/planet-jupiter-internal.svg';
+import jupiterGeoImage from '../public/planet-jupiter-geology.png';
 
 import PlanetSection from '../components/PlanetSection/PlanetSection';
 

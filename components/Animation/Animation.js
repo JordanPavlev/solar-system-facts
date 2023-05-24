@@ -1,7 +1,7 @@
-import { AnimationContainer } from "./AnimationsStyles";
-import { SunAnimation } from "./AnimationsStyles";
-import { RingsAsteroids } from "./AnimationsStyles";
-import AnimationsRouter from "./AnimationsRouter";
+import { AnimationContainer } from "./AnimationStyles";
+import { SunAnimation } from "./AnimationStyles";
+import { RingsAsteroids } from "./AnimationStyles";
+import AnimationsRouter from "./AnimationRouter";
 
 import { titles } from "./titles";
 const Animations = ({ activePlanet }) => {

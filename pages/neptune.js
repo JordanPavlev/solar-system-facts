@@ -1,6 +1,6 @@
-import neptuneImage from '@public/planet-neptune.svg';
-import neptuneInternalImage from '@public/planet-neptune-internal.svg';
-import neptuneGeoImage from '@public/planet-neptune-geology.png';
+import neptuneImage from '../public/planet-neptune.svg';
+import neptuneInternalImage from '../public/planet-neptune-internal.svg';
+import neptuneGeoImage from '../public/planet-neptune-geology.png';
 
 import PlanetSection from '../components/PlanetSection/PlanetSection';
 

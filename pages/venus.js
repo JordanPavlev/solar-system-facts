@@ -1,6 +1,6 @@
-import venusImage from '@public/planet-venus.svg';
-import venusInternalImage from '@public/planet-venus-internal.svg';
-import venusGeoImage from '@public/planet-venus-geology.png';
+import venusImage from '../public/planet-venus.svg';
+import venusInternalImage from '../public/planet-venus-internal.svg';
+import venusGeoImage from '../public/planet-venus-geology.png';
 
 import PlanetSection from '../components/PlanetSection/PlanetSection';
 

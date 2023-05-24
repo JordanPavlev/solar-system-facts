@@ -28,7 +28,7 @@ export const Item = styled.li`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px inset ${(props) => props.theme.colors.grayDark};
+    border: 2px inset ${props => (props.theme && props.theme.color && {color: 'grayDark'})};;
     border-radius: 19px;
     background-color: rgb(247, 252, 250, .1);
     height: 48px;
@@ -55,7 +55,7 @@ font-size: 0.9rem;
 line-height: 16px;
 letter-spacing: 0.186rem;
 text-transform: uppercase;
-color: ${(props) => props.theme.colors.grayLight};
+color: ${props => (props.theme && props.theme.color && {color: 'greyLight'})};;
 
     @media (min-width: 1025px) {
         font-size: 0.9875rem;
@@ -66,11 +66,11 @@ color: ${(props) => props.theme.colors.grayLight};
 
 export const Description = styled.p`
 font-size: 1.25rem;
-font-family: ${(props) => props.theme.fonts.secondary};
+font-family: ${props => (props.theme && props.theme.fonts && {fonts: 'secondary'})};;
 line-height: 100%;
 letter-spacing: -0.047rem;
 text-transform: uppercase;
-color: ${(props) => props.theme.colors.white};
+color: ${props => (props.theme && props.theme.color && {color: 'white'})};;
 
     @media (min-width: 768px) {
         font-size: 1.5rem;

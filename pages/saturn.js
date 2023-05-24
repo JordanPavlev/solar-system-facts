@@ -1,6 +1,6 @@
-import saturnImage from '@public/planet-saturn.svg';
-import saturnInternalImage from '@public/planet-saturn-internal.svg';
-import saturnGeoImage from '@public/planet-saturn-geology.png';
+import saturnImage from '../public/planet-saturn.svg';
+import saturnInternalImage from '../public/planet-saturn-internal.svg';
+import saturnGeoImage from '../public/planet-saturn-geology.png';
 
 import PlanetSection from '../components/PlanetSection/PlanetSection';
 

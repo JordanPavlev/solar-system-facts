@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import { motion } from 'framer-motion';
 
 export const Nav = styled.nav``;
@@ -80,7 +80,7 @@ export const Item = styled(motion.li)`
     border-bottom: 1px solid ${(props) => props.theme.colors.grayDark};
 `
 
-export const Link = styled(NavLink)`
+export const Links = styled(Link)`
     display: flex;
     justify-content: space-between;
     position: relative;

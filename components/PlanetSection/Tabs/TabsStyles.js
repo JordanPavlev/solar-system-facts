@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const Tabs = styled(motion.div)`
     display: flex;
-    border-bottom: 1px solid ${(props) => props.theme.colors.grayDark};
+    border-bottom: 1px solid ${props => (props.theme && props.theme.color && {color: 'grayDark'})};;
     justify-content: space-between;
     padding: 0 24px;
 
@@ -32,7 +32,7 @@ export const Tabs = styled(motion.div)`
 export const Tab = styled.button`
     position: relative;
     display: flex;
-    font-family: ${(props) => props.theme.fonts.primary};
+    font-family: ${props => (props.theme && props.theme.fonts && {fonts: 'primary'})};;
     font-size: 0.5625rem;
     font-weight: 600;
     letter-spacing: 0.12rem;
@@ -40,7 +40,7 @@ export const Tab = styled.button`
     background: transparent;
     border: none;
     padding: 20px 5px;
-    color: ${(props) => props.theme.colors.grayLight};
+    color: '${props => (props.theme && props.theme.color && {color: 'grayDark'})};
     transition: color 350ms ease;
 
     &::before {
@@ -59,7 +59,7 @@ export const Tab = styled.button`
     ${(props) =>
         props.isActive
             ? css`
-                  color: ${props.theme.colors.white};
+                  color: ${props => (props.theme && props.theme.color && {color: 'white'})};
                   &::before {
                       transform: scaleX(1);
                   }
@@ -68,10 +68,10 @@ export const Tab = styled.button`
 
     @media (min-width: 768px) {
         padding: 15px 5px 15px 50px;
-        border: 1px solid ${(props) => props.theme.colors.grayDark};
+        border: 1px solid ${props => (props.theme && props.theme.color && {color: 'grayDark'})};;
         transition: background-color 300ms ease;
         cursor: pointer;
-        color: ${(props) => props.theme.colors.white};
+        color: ${props => (props.theme && props.theme.color && {color: 'white'})};;
 
         &::before {
             content: unset;
@@ -86,15 +86,15 @@ export const Tab = styled.button`
             width: 10px;
             height: 10px;
             transform: translateY(-60%);
-            font-family: ${(props) => props.theme.fonts.primary};
+            font-family: ${props => (props.theme && props.theme.fonts && {fonts: 'primary'})};;
             font-size: 0.5625rem;
             font-weight: 600;
             letter-spacing: 0.12rem;
-            color: ${(props) => props.theme.colors.whiteAlpha50};
+            color: ${props => (props.theme && props.theme.color && {color: 'white'})};;
         }
 
         &:hover {
-            background-color: ${(props) => props.theme.colors.grayDark};
+            background-color: ${props => (props.theme && props.theme.color && {color: 'grayDark'})};;;
         }
 
         &:focus {

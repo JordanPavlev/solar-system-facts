@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 
 export const Nav = styled.nav`
@@ -22,7 +22,7 @@ export const List = styled.ul`
 
 export const Item = styled.li``
 
-export const Link = styled(NavLink)`
+export const Links = styled(Link)`
     display: flex;
     position: relative;
     font-size: 0.9875rem;

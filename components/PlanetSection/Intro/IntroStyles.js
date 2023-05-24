@@ -24,9 +24,9 @@ export const Intro = styled(motion.div)`
 
 export const Title = styled.h1`
 
-    color: ${(props) => props.theme.colors.white};
+    color: ${props => (props.theme && props.theme.color && {color: 'white'})};;
     font-size: 1.5rem;
-    font-family: ${(props) => props.theme.fonts.secondary};
+    font-family: ${props => (props.theme && props.theme.fonts && {fonts: 'secondary'})};;
     font-weight: 500;
     line-height: 100%;
     text-transform: uppercase;
@@ -46,7 +46,7 @@ export const Title = styled.h1`
 export const Paragraph = styled.p`
     font-size: 0.9875rem;
     line-height: 22px;
-    color: ${(props) => props.theme.colors.whiteAlpha75};
+    color: ${props => (props.theme && props.theme.color && {color: 'white'})};;
     text-align: center;
     margin-bottom: 10px;
     max-width: 500px;
@@ -93,7 +93,7 @@ export const SourceContainer = styled.span`
 
 export const Span = styled.span`
 
-    color: ${(props) => props.theme.colors.grayLight};
+    color: ${props => (props.theme && props.theme.color && {color: 'grayDark'})};;
     font-size: 0.75rem;
     line-height: 25px;
 
@@ -111,7 +111,7 @@ export const PlanetLink = styled.a`
     font-weight: 600;
     line-height: 25px;
     text-decoration: underline;
-    color: ${(props) => props.theme.colors.grayLight};
+    color: ${props => (props.theme && props.theme.color && {color: 'greyLight'})};;
 
     &:focus {
         outline: none;
